@@ -1,0 +1,20 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  #btn1{
+     float:right;
+     background-color: black; 
+  }
+  .bg{
+    background-image: url(C:\Users\Aakash\Desktop\myapp\src\ang6.jpg);
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

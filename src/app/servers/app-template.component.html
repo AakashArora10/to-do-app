@@ -1,0 +1,32 @@
+<div class="bg"></div>
+    <div style="margin-left:650px;margin-top:-700px;color:lavenderblush;font-size:50px;font-weight: 100;"><strong >TO-DO LIST</strong></div>>
+    <div class="container">
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Add a ToDo" [(ngModel)]="items" name="items" >
+        </mat-form-field>
+      
+        <mat-form-field class="example-full-width">
+          <textarea matInput placeholder="Abstract" [(ngModel)]="itemDetails" name="itemDetails"></textarea>
+        </mat-form-field>
+      </form>
+      <br>
+        <button type="submit" class="btn btn-primary" (click)="onClick()">Add Item</button> 
+        <hr>
+       
+       <ul>
+           <li *ngFor="let lists of list;let i=index">
+             
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+               <b>{{ lists.name }}</b><br>
+          </div>
+          <div class="panel-body">
+               <b>{{ lists.details }}</b>
+               <button class="btn btn-danger" id="btn1"(click)="delete(i)">delete</button>
+               </div>
+          </div>    
+              <br><br>
+           </li>
+       </ul> 
+    </div>
